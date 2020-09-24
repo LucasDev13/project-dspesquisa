@@ -31,11 +31,12 @@ public class Record implements Serializable{
 	public Record() {
 	}
 
-	public Record(Long id, String name, Integer age, Instant moment) {
+	public Record(Long id, String name, Integer age, Instant moment, Game game) {
 		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.moment = moment;
+		this.game = game;
 	}
 
 	public Long getId() {

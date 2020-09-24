@@ -21,13 +21,13 @@ public class RecordDTO implements Serializable {
 	}
 	
 	public RecordDTO(Record entity) {
-		id = entity.getId();
-		moment = entity.getMoment();
-		name = entity.getName();
-		age = entity.getAge();
-		gameTitle = entity.getGame().getTitle();
-		gamePlatform = entity.getGame().getPlatform();
-		genreName = entity.getGame().getGenre().getName();
+		this.id = entity.getId();
+		this.moment = entity.getMoment();
+		this.name = entity.getName();
+		this.age = entity.getAge();
+		this.gameTitle = entity.getGame().getTitle();
+		this.gamePlatform = entity.getGame().getPlatform();
+		this.genreName = entity.getGame().getGenre().getName();
 	}
 
 	public Long getId() {
